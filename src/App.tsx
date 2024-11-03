@@ -1,13 +1,11 @@
 import './App.css'
-import myicon from './assets/avatar-on-GH.png'
+import Header from './components/Header'
+import GoalList from './components/GoalList';
 
 function App() {
   return (
     <>
-      <header>
-        <img src={myicon} alt="An image of Noriyo Akita"></img>
-        <h1>Noriyo Akita</h1>
-      </header>
+      <Header />
       <main>
         <p>My name is Noriyo Akita.</p>
         <p>
@@ -15,6 +13,7 @@ function App() {
           passionate about programming, and I am always looking for new
           challenges.
         </p>
+        <GoalList />
       </main>
     </>
   );
